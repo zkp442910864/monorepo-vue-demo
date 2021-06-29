@@ -1,0 +1,253 @@
+// @import '~ant-design-vue/dist/antd.less';
+// antd 样式
+@import '~ant-design-vue/dist/antd.less';
+// vue treeSelect 样式，其他地方用到了，就全局引入了
+@import '~@riophae/vue-treeselect/dist/vue-treeselect.css';
+
+@import '~./params.less';
+@import '~./baseTable.less';
+@import '~./style1/index.less';
+
+
+body{
+    background: #f5f5f5;
+}
+
+.flex, .flex-box {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+}
+
+.align-start{
+    align-items: flex-start;
+}
+
+.justify-s-b {
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-end{
+    justify-content: flex-end;
+}
+
+.justify-start{
+    justify-content: flex-start;
+}
+
+
+.f-v {
+    flex-direction: column;
+    -webkit-flex-direction: column;
+}
+.flex-1 {
+    flex-grow: 1;
+    -webkit-flex-grow: 1;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.rel{
+    position: relative;
+}
+
+.abs{
+    position: absolute;
+}
+
+.query-card{
+    margin-bottom: 10px;
+    background: #f5f5f5;
+}
+
+.query-card .ant-card-body{
+    padding: 10px;
+    padding-bottom: 0;
+}
+
+.form-model-horizontal{
+
+}
+
+.form-model-horizontal .ant-form-item{
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-model-horizontal .ant-form-item-control-wrapper{
+    flex: 1;
+}
+
+.table-footer{
+    background-color: #fafafa;
+}
+
+.m-l-5{margin-left: 5px;}
+.m-r-5{margin-right: 5px;}
+.m-t-5{margin-top: 5px;}
+.m-b-5{margin-bottom: 5px;}
+
+.m-l-10{margin-left: 10px;}
+.m-r-10{margin-right: 10px;}
+.m-t-10{margin-top: 10px;}
+.m-b-10{margin-bottom: 10px;}
+
+.m-l-20{margin-left: 20px;}
+.m-r-20{margin-right: 20px;}
+.m-t-20{margin-top: 20px;}
+.m-b-20{margin-bottom: 20px;}
+
+
+.error-color {
+    color: @error-color;
+}
+
+.main-color {
+    color: @main-color;
+}
+
+.grey-color{
+    color:@grey-color
+}
+
+.pointer{
+    cursor:pointer;
+}
+
+// 识别 \n
+.n-br{
+    white-space: pre-line;
+}
+
+.font-12{ font-size: 12px; }
+.font-14{ font-size: 14px; }
+.font-16{ font-size: 16px; }
+.font-18{ font-size: 18px; }
+.font-20{ font-size: 20px; }
+.font-22{ font-size: 22px; }
+
+.font-bold{
+    font-weight:bold;
+}
+
+.nowrap{
+    white-space: nowrap;
+}
+
+.width-100{width: 100%;}
+.height-100{height: 100%;}
+
+.width50{width:50px !important;min-width:50px !important;}
+.width100{width:100px !important;min-width:100px !important;}
+.width200{width:200px !important;min-width:200px !important;}
+.width300{width:300px !important;min-width:300px !important;}
+.width400{width:400px !important;min-width:400px !important;}
+.width500{width:500px !important;min-width:500px !important;}
+.width600{width:600px !important;min-width:600px !important;}
+
+
+
+// -----------内嵌页面样式-----------------------------------------
+.inline-page .ant-modal{
+    width: 100% !important;
+    top: 0;
+    height: 100%;
+    padding: 0;
+}
+.inline-page .ant-modal-content{
+    border-radius: 0;
+    box-shadow: none;
+    min-height: 100%;
+}
+.inline-page .ant-modal-header, .inline-page .ant-modal-close{
+    display: none;
+}
+
+.inline-page .ant-modal-footer .ant-btn, .inline-page .close-name{
+    display: none;
+}
+
+.inline-page .ant-modal-footer .ant-btn-primary{
+    display: inline-block;
+}
+
+.inline-page .ant-modal-footer{
+    position: sticky;
+    bottom: 0;
+    right: 0;
+    background: #fff;
+}
+// -----------内嵌页面样式-----------------------------------------
+
+
+
+// -----------进度条颜色-----------------------------------------
+#nprogress .spinner-icon{
+    border-top-color: @main-color;
+    border-left-color: @main-color;
+}
+
+#nprogress .bar{
+    background: @main-color;
+}
+// -----------进度条颜色-----------------------------------------
+
+
+// antd 里面的样式重置
+.ant-btn-sm{
+    font-size: 12px;
+}
+
+.ant-back-top-icon{
+    background-size: contain;
+}
+
+.ant-table-thead > tr > th .ant-table-column-sorter .ant-table-column-sorter-inner-full .ant-table-column-sorter-up, .ant-table-thead > tr > th .ant-table-column-sorter .ant-table-column-sorter-inner-full .ant-table-column-sorter-down{
+    height: 6px;
+    line-height: 6px;
+}
+
+.ant-table-thead > tr > th .ant-table-column-sorter .ant-table-column-sorter-inner-full .ant-table-column-sorter-down{
+    margin-top: 1px;
+}
+
+// .ant-modal-wrap, .ant-modal-mask{
+//     z-index: 1112;
+// }
+
+// 在表单中 设置这个宽度，可以让多选后，不换行
+// .ant-form-item-control{
+//     .ant-select .ant-select-selection__rendered {
+//         // overflow: hidden;
+//         ul {min-width: 200px;}
+//     }
+// }
+
+
+
+// 滚动
+::-webkit-scrollbar-track-piece {
+    background-color: #f8f8f8;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ddd;
+    background-clip: padding-box;
+    min-height: 28px;
+}
+
+::-webkit-scrollbar {
+    width: 9px;
+    height: 9px;
+}

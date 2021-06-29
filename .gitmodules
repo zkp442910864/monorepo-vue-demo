@@ -1,0 +1,8 @@
+# [submodule "packages/common-utils"]
+# 	path = packages/common-utils
+# 	url = https://github.com/zkp442910864/webpack_public_tpl.git
+
+# [submodule "packages/vue-pack5"]
+# 	path = packages/vue-pack5
+# 	url = https://github.com/zkp442910864/webpack_public_tpl2.git
+

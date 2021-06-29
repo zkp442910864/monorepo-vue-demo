@@ -1,0 +1,81 @@
+.z-border {
+
+    .ant-table{
+        font-size: 12px;
+        color: #999;
+    }
+
+    .ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-header > table > .ant-table-thead > tr > th,
+    .ant-table-small > .ant-table-content > .ant-table-body > table > .ant-table-thead > tr > th,
+    .ant-table-thead > tr > th .ant-table-header-column .ant-table-column-sorters::before{
+        background-color: #F9F9F9;
+        font-size: 14px;
+        color: #666;
+        font-weight: 500;
+    }
+
+    // .ant-table-row:nth-child(even){
+    //     background-color: #F2F9FF;
+    // }
+
+    .ant-table-row.ant-table-row-level-0.pinto{
+        background-color: #F2F9FF;
+    }
+
+    .ant-table-small{
+        // border-color:#D0EAF9;
+        // border-width: 2px;
+        border: 1px solid #D0EAF9;
+        overflow: hidden;
+    }
+
+    .ant-table-bordered .ant-table-thead > tr > th, .ant-table-bordered .ant-table-tbody > tr > td{
+        // border-width: 2px;
+        // border-color:#D0EAF9;
+        border-color: #F2F2F2;
+    }
+
+    .ant-table-bordered .ant-table-thead > tr > th:last-child, .ant-table-bordered .ant-table-tbody > tr > td:last-child{
+        // border-width: 2px;
+        // border-color:#D0EAF9;
+        border-right: none;
+    }
+
+    .ant-table-selection-column {
+        .ant-checkbox-inner{
+            width: 20px;
+            height: 20px;
+            border-color: #999;
+            transform: none !important;
+            transition: none !important;
+            animation: none !important;
+        }
+
+        .ant-checkbox-checked .ant-checkbox-inner{
+            border-color: @main-color;
+        }
+
+        .ant-checkbox-checked .ant-checkbox-inner::after{
+            top: 50%;
+            left: 50%;
+            margin-top: -6px;
+            margin-left: -3px;
+            transform: rotate(45deg) scale(1.2);
+        }
+
+        .ant-checkbox-inner::after, .ant-checkbox-checked .ant-checkbox-inner::after, .ant-checkbox-checked::after{
+            // transform: rotate(48deg) scale(1.2) translate(-50%, -50%);
+            transition: none !important;
+            animation: none !important;
+        }
+    }
+
+
+    .table-footer .item{
+        border-right: 1px solid #F2F2F2;
+        border-top: 1px solid #F2F2F2;
+        background-color: #F9F9F9;
+        color: #666;
+    }
+
+}
