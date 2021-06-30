@@ -6,6 +6,6 @@
   },
   "workspaces": [
     "packages/*",
-    "project/*"
+    "projects/*"
   ]
 }

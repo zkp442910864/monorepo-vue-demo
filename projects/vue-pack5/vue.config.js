@@ -18,9 +18,9 @@ module.exports = {
     },
     pluginOptions: {
         'style-resources-loader': {
-            preProcessor: 'scss',
+            preProcessor: 'less',
             patterns: [
-                'E:\\demo\\mono-repo\\packages\\vue-pack5\\src\\assets\\params.less'
+                path.resolve(__dirname, './', 'src/assets/params.less')
             ]
         }
     }

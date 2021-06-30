@@ -1,10 +1,15 @@
+
+const fg = require('fast-glob');
+const projects = fg.sync('./packages/*', {onlyDirectories: true});
+console.log(projects)
+
 module.exports = {
     // **optional** default: `{}`
     // override vscode settings part
     // Notice: It only affects the settings used by Vetur.
     settings: {
-        // "vetur.useWorkspaceDependencies": true,
-        // "vetur.experimental.templateInterpolationService": true
+        "vetur.useWorkspaceDependencies": true,
+        "vetur.experimental.templateInterpolationService": true
     },
     // **optional** default: `[{ root: './' }]`
     // support monorepos
@@ -36,14 +41,16 @@ module.exports = {
             // Notice: It won't actually do it. You need to use `require.context` or `Vue.component`
             // 通过这个来进行组件智能提示
             globalComponents: [
-                './packages/components-vue/src/components'
+                '@mono/components-vue',
+                './packages/components-vue/src/components/**/*.vue'
             ]
         },
         {
-            root: './packages/vue-pack5',
+            root: './projects/vue-pack5',
             // 通过这个来进行组件智能提示
             globalComponents: [
-                './packages/components-vue/src/components'
+                '@mono/components-vue',
+                './packages/components-vue/src/components/**/*.vue'
             ]
         }
     ]

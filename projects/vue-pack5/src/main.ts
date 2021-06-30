@@ -6,7 +6,7 @@ import moment from 'moment';
 // import * as vueComponents from '@mono/components-vue';
 import {MyCheckbox} from '@mono/components-vue';
 import * as utils from '@mono/common-utils';
-import '@mono/components-vue/src/assets/common.less';
+import '@/assets/common.less';
 
 Vue.config.productionTip = false;
 

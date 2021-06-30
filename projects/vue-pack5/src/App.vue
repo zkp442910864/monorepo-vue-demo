@@ -6,7 +6,9 @@
             <span>搜索</span>
         </button>
         <div class="asdf">123123</div>
-        <MyCheckbox >123</MyCheckbox>
+        <!-- <MyCheckbox >123</MyCheckbox> -->
+        <!-- <my-checkbox >123</my-checkbox> -->
+        <my-checkbox ></my-checkbox>
     </div>
 </template>
 
@@ -40,5 +42,6 @@
         text-align: center;
         color: #2c3e50;
         margin-top: 60px;
+        color: @primary-color;
     }
 </style>
