@@ -6,19 +6,20 @@
             <span>搜索</span>
         </button>
         <div class="asdf">123123</div>
-        <!-- <MyCheckbox >123</MyCheckbox> -->
+        <MyCheckbox >123</MyCheckbox>
         <!-- <my-checkbox >123</my-checkbox> -->
+        <!-- <my-checkbox ></my-checkbox> -->
         <my-checkbox ></my-checkbox>
     </div>
 </template>
 
 <script lang="ts">
     import {Component, Vue} from 'vue-property-decorator';
-    // import {MyCheckbox} from '@mono/components-vue';
+    import {MyCheckbox} from '@mono/components-vue';
 
     @Component({
         components: {
-            // MyCheckbox
+            MyCheckbox
         }
     })
     export default class App extends Vue {

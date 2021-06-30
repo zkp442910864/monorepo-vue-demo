@@ -3,21 +3,21 @@ import App from './App.vue';
 import Antd, {message, Modal} from 'ant-design-vue';
 import 'ant-design-vue/dist/antd.css';
 import moment from 'moment';
-// import * as vueComponents from '@mono/components-vue';
-import {MyCheckbox} from '@mono/components-vue';
+import * as vueComponents from '@mono/components-vue';
+// import {MyCheckbox} from '@mono/components-vue';
 import * as utils from '@mono/common-utils';
 import '@/assets/common.less';
 
 Vue.config.productionTip = false;
 
 Vue.use(Antd);
-Vue.component('MyCheckbox', MyCheckbox);
+// Vue.component('MyCheckbox', MyCheckbox);
 
 // console.log(vueComponents);
-// type TName = keyof typeof vueComponents;
-// Object.keys(vueComponents).forEach((name) => {
-//     Vue.component(name, vueComponents[name as TName]);
-// });
+type TName = keyof typeof vueComponents;
+Object.keys(vueComponents).forEach((name) => {
+    Vue.component(name, vueComponents[name as TName]);
+});
 
 utils.utilsConfig.moment = moment;
 utils.utilsConfig.modal = Modal;
