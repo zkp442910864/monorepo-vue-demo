@@ -16,10 +16,21 @@
 <script lang="ts">
     import {Component, Vue} from 'vue-property-decorator';
     import {MyCheckbox} from '@mono/components-vue';
+    import Test from '@/components/Test.vue';
+    // import a from '@/views/q';
+    // const b = require('./views/q');
+
+    // console.log(b);
+
+
+    // b.fun();
+    // b.fun();
+    // console.log(b, a, b.fun === a.fun);
 
     @Component({
         components: {
-            MyCheckbox
+            MyCheckbox,
+            Test
         }
     })
     export default class App extends Vue {
