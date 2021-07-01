@@ -50,7 +50,7 @@
 
 
 ### 目录树生成
->[地址](https://www.cnblogs.com/wonz/p/13578242.html)
+>[参考 tree-node-cli](https://www.cnblogs.com/wonz/p/13578242.html)
 >注意在 Git Bash Here 里面执行命令,在 cmd 里面实效了
 
 
