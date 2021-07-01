@@ -1,7 +1,6 @@
 {
-    "my-checkbox": {
-		"description": "基于antd table 二次封装的table",
-        "defaults": ["ref", "tableColumns", "abc"],
-        "attributes": ["params", "requestApi"]
+    "MyCheckbox": {
+        "attributes": ["falseValue", "trueValue"],
+		"description": "基于antd table 二次封装的 checkbox"
 	}
 }

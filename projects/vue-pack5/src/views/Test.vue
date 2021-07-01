@@ -1,6 +1,10 @@
 <template>
     <div class="">
-        <my-checkbox ></my-checkbox>
+        <!-- <my-checkbox ></my-checkbox> -->
+        <!-- <MyCheckbox v-model=""></MyCheckbox> -->
+        <!-- <MyCheckbox v-model=""></MyCheckbox> -->
+        <!-- <MyCheckbox v-model="" trueValue=""></MyCheckbox> -->
+        <!-- <MyCheckbox :falseValue="" :trueValue="" v-model=""></MyCheckbox> -->
     </div>
 </template>
 

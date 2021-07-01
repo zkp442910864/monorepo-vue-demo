@@ -6,10 +6,10 @@
             <span>搜索</span>
         </button>
         <div class="asdf">123123</div>
-        <MyCheckbox >123</MyCheckbox>
+        <!-- <MyCheckbox >123</MyCheckbox> -->
         <!-- <my-checkbox >123</my-checkbox> -->
         <!-- <my-checkbox ></my-checkbox> -->
-        <my-checkbox ></my-checkbox>
+        <!-- <my-checkbox :trueValue="" ></my-checkbox> -->
     </div>
 </template>
 

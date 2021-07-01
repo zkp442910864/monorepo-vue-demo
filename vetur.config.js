@@ -4,6 +4,21 @@ const packages = fg.sync('./packages/*', {onlyDirectories: true});
 const projects = fg.sync('./projects/*', {onlyDirectories: true});
 // console.log(987654321, projects)
 
+const getProjects = (...arg) => {
+    const arrObj = [];
+    arg.forEach((itemArr) => {
+        itemArr.forEach((root) => {
+            arrObj.push({
+                root,
+                snippetFolder: './packages/components-vue/vetur',
+                // snippetFolder: './.vscode/vetur/snippets',
+            });
+        });
+    });
+
+    return arrObj;
+}
+
 module.exports = {
     // **optional** default: `{}`
     // override vscode settings part
@@ -14,10 +29,7 @@ module.exports = {
     },
     // **optional** default: `[{ root: './' }]`
     // support monorepos
-    projects: [
-        ...packages,
-        ...projects,
-    ]
+    projects: getProjects(packages, projects)
     // [
     //     {
     //         // **required**

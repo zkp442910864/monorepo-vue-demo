@@ -1,5 +1,7 @@
 const path = require('path');
-
+// const fg = require('fast-glob');
+// const packages = fg.sync('./src/*', {onlyDirectories: true});
+// console.log(packages)
 module.exports = {
 
     publicPath: './',

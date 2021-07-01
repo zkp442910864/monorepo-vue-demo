@@ -1,0 +1,13 @@
+{
+	// https://code.visualstudio.com/docs/editor/userdefinedsnippets
+
+    // 工具： https://snippet-generator.app/
+    "MyCheckbox": {
+        "scope": "vue,Vue,vue-html,Vue-html",
+		"prefix": "MyCheckbox",
+		"body": [
+			"<MyCheckbox v-model=\"$1\">$2</MyCheckbox>"
+		],
+		"description": "基于antd table 二次封装的 checkbox"
+	}
+}
