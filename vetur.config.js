@@ -2,7 +2,6 @@
 const fg = require('fast-glob');
 const packages = fg.sync('./packages/*', {onlyDirectories: true});
 const projects = fg.sync('./projects/*', {onlyDirectories: true});
-// console.log(987654321, projects)
 
 const getProjects = (...arg) => {
     const arrObj = [];
@@ -10,8 +9,12 @@ const getProjects = (...arg) => {
         itemArr.forEach((root) => {
             arrObj.push({
                 root,
+                // 这两个无效
                 snippetFolder: './packages/components-vue/vetur',
                 // snippetFolder: './.vscode/vetur/snippets',
+                globalComponents: [
+                    './packages/components-vue/src/components/**/*.vue'
+                ]
             });
         });
     });
@@ -24,8 +27,8 @@ module.exports = {
     // override vscode settings part
     // Notice: It only affects the settings used by Vetur.
     settings: {
-        // "vetur.useWorkspaceDependencies": true,
-        // "vetur.experimental.templateInterpolationService": true
+        "vetur.useWorkspaceDependencies": true,
+        "vetur.experimental.templateInterpolationService": true
     },
     // **optional** default: `[{ root: './' }]`
     // support monorepos

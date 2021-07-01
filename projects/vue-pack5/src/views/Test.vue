@@ -5,6 +5,7 @@
         <!-- <MyCheckbox v-model=""></MyCheckbox> -->
         <!-- <MyCheckbox v-model="" trueValue=""></MyCheckbox> -->
         <!-- <MyCheckbox :falseValue="" :trueValue="" v-model=""></MyCheckbox> -->
+        <!-- <MyCheckbox v-model="" :falseValue="2"></MyCheckbox> -->
     </div>
 </template>
 
