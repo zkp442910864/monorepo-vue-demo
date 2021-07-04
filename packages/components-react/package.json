@@ -30,7 +30,7 @@
     "test:component": "umi test ./src/components",
     "tsc": "tsc",
     "ui": "umi ui",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "start-storybook -p 6007",
     "build-storybook": "build-storybook"
   },
   "husky": {
