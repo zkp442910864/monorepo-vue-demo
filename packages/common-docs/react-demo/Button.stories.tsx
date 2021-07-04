@@ -1,19 +1,17 @@
-import MyButton from './Button.vue';
+import React from 'react';
+import { ComponentStory, ComponentMeta } from '@storybook/react';
+
+import { Button } from './Button';
 
 export default {
-  title: 'vue-demo/Button',
-  component: MyButton,
+  title: 'Example/Button',
+  component: Button,
   argTypes: {
     backgroundColor: { control: 'color' },
-    size: { control: { type: 'select', options: ['small', 'medium', 'large'] } },
   },
-};
+} as ComponentMeta<typeof Button>;
 
-const Template = (args, { argTypes }) => ({
-  props: Object.keys(argTypes),
-  components: { MyButton },
-  template: '<my-button @onClick="onClick" v-bind="$props" />',
-});
+const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
