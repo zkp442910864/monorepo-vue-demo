@@ -3,7 +3,7 @@ module.exports = {
     root: true,
     globals: {
         IOBJ: true
-    }
+    },
     // env: {
     //     node: true
     // },

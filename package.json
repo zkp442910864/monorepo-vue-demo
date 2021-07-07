@@ -2,6 +2,8 @@
     "name": "root",
     "private": true,
     "scripts": {
+        "storybook:react": "cd ./packages/components-react && yarn storybook",
+        "storybook:vue": "cd ./packages/components-vue && yarn storybook"
     },
     "devDependencies": {
         "lerna": "^4.0.0"

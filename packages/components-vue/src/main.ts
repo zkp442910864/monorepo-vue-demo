@@ -8,7 +8,7 @@ import '@/assets/common.less';
 
 Vue.config.productionTip = false;
 
-Vue.use(Antd);
+Vue.use(Antd)
 
 // window.utils = utils;
 

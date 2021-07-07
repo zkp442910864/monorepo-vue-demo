@@ -1,0 +1,77 @@
+import {Meta, Story} from '@storybook/addon-docs';
+
+<Meta title="common/关于storybook" />
+
+
+### 参数说明
+```
+export default {
+    /**
+    * 标题
+    */
+    title: 'vue/MyCheckbox 选择框',
+
+    /**
+    * 组件
+    */
+    component: MyCheckbox,
+
+    /**
+    * 参数
+    */
+    args: {},
+
+    /**
+    * 配置参数
+    */
+    parameters: {},
+
+    /**
+    * 参数文档配置
+    */
+    argTypes: {
+        /**
+        * props 属性
+        */
+        trueValue: {
+            /**
+            * 描述文本
+            */
+            description: '选中的值',
+
+            /**
+            * 表格内容
+            */
+            table: {
+                // 隐藏该属性
+                disable: true,
+                // 表格行 所属类别
+                category: '参数 props',
+                // 表格行 Description 列，对应的参数类型和详情
+                type: {
+                    summary: 'boolean | number | string',
+                    detail: 'boolean | number | string',
+                },
+                // 表格行 Default 列，对应的参数默认值和详情
+                defaultValue: {
+                    summary: 'Hello',
+                    detail: 'boolean | number | string',
+                },
+            },
+
+            /**
+            * Control 值类型
+            */
+            type: {name: 'number'},
+
+            /**
+            * Control 交互方式
+            */
+            control: {
+                type: 'radio',
+                options: [1, 2, 3]
+            }
+        }
+    }
+}
+```

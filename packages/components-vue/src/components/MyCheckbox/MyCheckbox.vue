@@ -12,7 +12,6 @@
      */
 
     import {Component, Vue, Model, Watch, Emit, Prop} from 'vue-property-decorator';
-    import * as utils from '@mono/common-utils';
 
     @Component
     export default class MyCheckbox extends Vue {
@@ -20,10 +19,10 @@
         @Prop({type: [Boolean, Number, String], default: true}) readonly trueValue!: boolean | number | string;
         @Prop({type: [Boolean, Number, String], default: false}) readonly falseValue!: boolean | number | string;
 
-        @Emit('change')
-        change (val: boolean | number | string) {
-            return val;
-        }
+        // @Emit('change')
+        // change (val: boolean | number | string) {
+        //     return val;
+        // }
 
         @Watch('value', {immediate: true})
         handleValue (val: boolean | number | string) {
@@ -36,12 +35,13 @@
 
         curChange (e: IOBJ): void {
             const val = e.target.checked;
-            this.change(val ? this.trueValue : this.falseValue);
-            this.curValue = val;
+            // this.change(val ? this.trueValue : this.falseValue);
+            this.$emit('change', val ? this.trueValue : this.falseValue);
+            // this.curValue = val;
         }
 
         created () {
-            utils.toast('MyCheckbox');
+            // utils.toast('MyCheckbox');
         }
 
         mounted () {}
