@@ -12,7 +12,7 @@ module.exports = (storybookBaseConfig, configType) => {
                 options: {javascriptEnabled: true},
             },
         ],
-        include: path.resolve(__dirname, '../../../')
+        include: path.resolve(__dirname, '../')
     });
 
     return storybookBaseConfig.config;

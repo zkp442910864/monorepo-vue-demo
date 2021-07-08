@@ -7,11 +7,9 @@
 
 <script lang="ts">
     import {Component, Vue} from 'vue-property-decorator';
-    import MyCheckbox from '@/components/MyCheckbox';
 
     @Component({
         components: {
-            MyCheckbox
         }
     })
     export default class App extends Vue {

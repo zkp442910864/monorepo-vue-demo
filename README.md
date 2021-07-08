@@ -59,8 +59,8 @@
 mono-repo-demo
 ├── packages                                包/组件 这些可以复用的
 │   ├── common-utils                        封装了常用方法，和请求函数
-│   │   ├── .eslintrc.js                    继承父层 .eslintrc-vue.js
-│   │   ├── tsconfig.json                   继承父层 tsconfig-vue.json
+│   │   ├── .eslintrc.js                    继承父层 .eslintrc.js
+│   │   ├── tsconfig.json                   继承父层 tsconfig.json
 │   │   ├── dist                            打包生成的产物
 │   │   │   ├── utils.umd.min.js            main 指向这个文件
 │   │   │   └── ...
@@ -70,8 +70,8 @@ mono-repo-demo
 │   │   │   └── ...
 │   │   └── ...
 │   └── components-vue                      封装了vue组件框，基于antd
-│       ├── .eslintrc.js                    继承父层 .eslintrc-vue.js
-│       ├── tsconfig.json                   继承父层 tsconfig-vue.json
+│       ├── .eslintrc.js                    继承父层 .eslintrc.js
+│       ├── tsconfig.json                   继承父层 tsconfig.json
 │       ├── vetur                           组件对应的字段说明(代码提示用)
 │       │   ├── attributes.json
 │       │   ├── README.md
@@ -82,8 +82,8 @@ mono-repo-demo
 │       ├── package.json                    需要引入 components-vue/vetur 文件夹下的两个json文件，才能有智能提示
 │       └── ...
 ├── README.md
-├── tsconfig-vue.json                       父层 tsconfig, 被vue项目继承的
-├── .eslintrc-vue.js                        父层 eslintrc, 被vue项目继承的
+├── tsconfig.json                       父层 tsconfig, 被vue项目继承的
+├── .eslintrc.js                        父层 eslintrc, 被vue项目继承的
 ├── vetur.config.js                         对vetur插件配置,针对vue项目不在根目录的处理
 ├── lerna.json
 ├── package.json

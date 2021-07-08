@@ -1,5 +1,5 @@
 module.exports = {
-    extends: "../../.eslintrc-vue",
+    extends: "../../.eslintrc",
     root: true,
     //   env: {
     //     node: true

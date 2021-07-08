@@ -20,7 +20,7 @@ const getProjects = (...arg) => {
     });
 
     return arrObj;
-}
+};
 
 module.exports = {
     // **optional** default: `{}`
@@ -83,4 +83,4 @@ module.exports = {
     //         // ]
     //     }
     // ]
-}
+};

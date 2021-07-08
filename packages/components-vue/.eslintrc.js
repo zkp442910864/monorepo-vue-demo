@@ -1,5 +1,5 @@
 module.exports = {
-    "extends": "../../.eslintrc-vue",
+    "extends": "../../.eslintrc.js",
     root: true,
     globals: {
         IOBJ: true

@@ -26,7 +26,7 @@ export default {
              */
             table: {
                 // 表格行 所属类别
-                category: '参数 props',
+                // category: '参数 props',
                 // 表格行 Description 列，对应的参数类型和详情
                 type: {
                     summary: 'boolean | number | string',
@@ -42,7 +42,7 @@ export default {
         falseValue: {
             description: '未选中的值',
             table: {
-                category: '参数 props',
+                // category: '参数 props',
                 type: {
                     summary: 'boolean | number | string',
                 },
@@ -51,7 +51,7 @@ export default {
         change: {
             description: '回调',
             table: {
-                category: '事件 events',
+                // category: '事件 events',
                 type: {
                     summary: '(val) => void',
                 }
@@ -69,7 +69,7 @@ const Template = (args, options) => {
         data () {
             return {
                 value: args.trueValue
-            }
+            };
         },
         template: '<MyCheckbox @change="change" v-model="value" v-bind="$props">值：{{value}}</MyCheckbox>',
     };

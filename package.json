@@ -2,11 +2,21 @@
     "name": "root",
     "private": true,
     "scripts": {
-        "storybook:react": "cd ./packages/components-react && yarn storybook",
-        "storybook:vue": "cd ./packages/components-vue && yarn storybook"
+        "storybook": "start-storybook -p 6006",
+        "storybook-doc": "start-storybook --docs --no-manager-cache",
+        "build-storybook": "build-storybook"
     },
     "devDependencies": {
-        "lerna": "^4.0.0"
+        "@babel/core": "^7.14.6",
+        "@storybook/addon-actions": "^6.3.2",
+        "@storybook/addon-controls": "^6.3.3",
+        "@storybook/addon-docs": "^6.3.3",
+        "@storybook/addon-essentials": "^6.3.2",
+        "@storybook/addon-links": "^6.3.2",
+        "@storybook/vue": "^6.3.2",
+        "babel-loader": "^8.2.2",
+        "lerna": "^4.0.0",
+        "vue-loader": "^15.9.7"
     },
     "workspaces": [
         "packages/*",

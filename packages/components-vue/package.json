@@ -6,10 +6,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "storybook": "start-storybook -p 6006",
-    "storybook-doc": "start-storybook --docs --no-manager-cache",
-    "build-storybook": "build-storybook"
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "@riophae/vue-treeselect": "^0.4.0",

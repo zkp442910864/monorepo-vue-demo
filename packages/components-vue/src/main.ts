@@ -8,7 +8,7 @@ import '@/assets/common.less';
 
 Vue.config.productionTip = false;
 
-Vue.use(Antd)
+Vue.use(Antd);
 
 // window.utils = utils;
 
@@ -21,7 +21,9 @@ utils.utilsConfig.message = {
 };
 
 utils.ajaxConfig.domain.apiUrl = '';
-utils.ajaxConfig.handleUnauthorized = (info) => { console.log(info); };
+utils.ajaxConfig.handleUnauthorized = (info) => {
+    console.log(info);
+};
 utils.ajaxConfig.interceptParams = () => ({});
 utils.ajaxConfig.interceptHeaders = () => ({});
 utils.ajaxConfig.loadBefore = () => ({});
