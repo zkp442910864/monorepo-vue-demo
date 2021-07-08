@@ -12,7 +12,7 @@
 ```
     npm install -g lerna
 
-    安装依赖并进行关联: lerna bootstrap || npm link && yarn install
+    安装依赖并进行关联: lerna bootstrap || lerna link && yarn install
 
     清除子项目node_modules: lerna clean
 
