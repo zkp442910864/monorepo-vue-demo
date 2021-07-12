@@ -1,2 +1,2 @@
 !.storybook/*
-/packages/common-utils
+/packages/common-utils/dist/*
