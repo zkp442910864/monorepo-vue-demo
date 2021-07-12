@@ -6,3 +6,6 @@
 # 	path = packages/vue-pack5
 # 	url = https://github.com/zkp442910864/webpack_public_tpl2.git
 
+[submodule "packages/common-utils-rollup"]
+	path = packages/common-utils-rollup
+	url = https://github.com/zkp442910864/common-utils.git
