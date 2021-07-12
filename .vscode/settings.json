@@ -4,5 +4,10 @@
         "iobj",
         "ts",
         "vetur"
+    ],
+    "eslint.workingDirectories": [
+        {
+            "pattern": "./packages/*/"
+        }
     ]
 }
