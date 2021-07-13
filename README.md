@@ -1,12 +1,12 @@
 # mono-repo-demo
 
 ### 关于monorepo
->参考资料
->>[monorepo 介绍1](https://www.zhihu.com/question/318476028/answer/1895685159)
->>[monorepo 介绍2](https://blog.csdn.net/qiwoo_weekly/article/details/115713366)
->>[Lerna](https://segmentfault.com/a/1190000019350611)
->>[storybook](https://storybook.js.org/)
->>使用库的版本最好都一致
+>参考资料<br>
+>>[monorepo 介绍1](https://www.zhihu.com/question/318476028/answer/1895685159)<br>
+>>[monorepo 介绍2](https://blog.csdn.net/qiwoo_weekly/article/details/115713366)<br>
+>>[Lerna](https://segmentfault.com/a/1190000019350611)<br>
+>>[storybook](https://storybook.js.org/)<br>
+>>使用库的版本最好都一致<br>
 
 
 ### 项目初始化
@@ -25,7 +25,7 @@
 ### 包名及引入
 ```
     package.json (例子: packages\common-utils\package.json)
-        设置包名: name (例子: @mono/项目文件名)
+        设置包名: name (例子: @mono/项目文件名，不要出现重复的名称)
         设置默认导出文件: main
         设置ts声明文件: typings
 
@@ -54,7 +54,7 @@
 
 ### 目录树生成
 >[参考 tree-node-cli](https://www.cnblogs.com/wonz/p/13578242.html)
->注意在 Git Bash Here 里面执行命令,在 cmd 里面实效了
+>>注意在 Git Bash Here 里面执行命令,在 cmd 里面实效了
 
 
 ### 目录结构
