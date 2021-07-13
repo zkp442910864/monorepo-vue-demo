@@ -3,7 +3,7 @@ import Preview from './config/Preview.vue';
 
 // 配置参数
 export const parameters = {
-    actions: {argTypesRegex: "^on[A-Z].*"},
+    actions: {argTypesRegex: '^on[A-Z].*'},
     controls: {
         matchers: {
             color: /(background|color)$/i,
@@ -21,7 +21,7 @@ export const decorators = [
                 Preview
             },
             template: '<Preview><story/></Preview>'
-        }
+        };
     }
 ];
 

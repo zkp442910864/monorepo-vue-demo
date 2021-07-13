@@ -5,10 +5,10 @@ module.exports = (storybookBaseConfig, configType) => {
     storybookBaseConfig.config.module.rules.push({
         test: /\.less$/,
         use: [
-            {loader: "style-loader"},
-            {loader: "css-loader"},
+            {loader: 'style-loader'},
+            {loader: 'css-loader'},
             {
-                loader: "less-loader",
+                loader: 'less-loader',
                 options: {javascriptEnabled: true},
             },
         ],
