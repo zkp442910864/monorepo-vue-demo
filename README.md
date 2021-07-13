@@ -2,10 +2,11 @@
 
 ### 关于monorepo
 >参考资料
->[monorepo 介绍1](https://www.zhihu.com/question/318476028/answer/1895685159)
->[monorepo 介绍2](https://blog.csdn.net/qiwoo_weekly/article/details/115713366)
->[Lerna 工具](https://segmentfault.com/a/1190000019350611)
->使用库的版本最好都一致
+>>[monorepo 介绍1](https://www.zhihu.com/question/318476028/answer/1895685159)
+>>[monorepo 介绍2](https://blog.csdn.net/qiwoo_weekly/article/details/115713366)
+>>[Lerna](https://segmentfault.com/a/1190000019350611)
+>>[storybook](https://storybook.js.org/)
+>>使用库的版本最好都一致
 
 
 ### 项目初始化
@@ -15,6 +16,8 @@
     安装依赖并进行关联: lerna bootstrap || lerna link && yarn install
 
     清除子项目node_modules: lerna clean
+
+    文档命令: yarn storybook
 
     然后到对应的项目执行运行命令
 ```
@@ -55,14 +58,14 @@
 
 
 ### 目录结构
+###### 项目中包含 .stories.js | .stories.mdx 后缀的，都属于文档文件
 ```
 mono-repo-demo
 ├── packages                                包/组件 这些可以复用的
-│   ├── common-utils                        封装了常用方法，和请求函数
+│   ├── common-utils                        封装了常用方法，和请求函数(git/svn 上的项目)
 │   │   ├── .eslintrc.js                    继承父层 .eslintrc.js
 │   │   ├── tsconfig.json                   继承父层 tsconfig.json
 │   │   ├── dist                            打包生成的产物
-│   │   │   ├── utils.umd.min.js            main 指向这个文件
 │   │   │   └── ...
 │   │   ├── package.json
 │   │   ├── src
@@ -82,8 +85,8 @@ mono-repo-demo
 │       ├── package.json                    需要引入 components-vue/vetur 文件夹下的两个json文件，才能有智能提示
 │       └── ...
 ├── README.md
-├── tsconfig.json                       父层 tsconfig, 被vue项目继承的
-├── .eslintrc.js                        父层 eslintrc, 被vue项目继承的
+├── tsconfig.json                           父层 tsconfig, 被vue项目继承的
+├── .eslintrc.js                            父层 eslintrc, 被vue项目继承的
 ├── vetur.config.js                         对vetur插件配置,针对vue项目不在根目录的处理
 ├── lerna.json
 ├── package.json
