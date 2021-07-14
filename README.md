@@ -1,6 +1,6 @@
 # monorepo-vue-demo
 
-[monorepo-react-demo pro-v2](https://github.com/zkp442910864/monorepo-react-demo)
+[monorepo-react-demo pro-v2版本](https://github.com/zkp442910864/monorepo-react-demo)
 
 ### 关于monorepo
 >参考资料<br>
