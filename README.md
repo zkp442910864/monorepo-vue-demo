@@ -1,4 +1,6 @@
-# mono-repo-demo
+# monorepo-vue-demo
+
+[monorepo-react-demo](https://github.com/zkp442910864/monorepo-react-demo)
 
 ### 关于monorepo
 >参考资料<br>
@@ -60,21 +62,13 @@
 ### 目录结构
 ###### 项目中包含 .stories.js | .stories.mdx 后缀的，都属于文档文件
 ```
-mono-repo-demo
 ├── packages                                包/组件 这些可以复用的
 │   ├── common-utils                        封装了常用方法，和请求函数(git/svn 上的项目)
-│   │   ├── .eslintrc.js                    继承父层 .eslintrc.js
-│   │   ├── tsconfig.json                   继承父层 tsconfig.json
 │   │   ├── dist                            打包生成的产物
 │   │   │   └── ...
-│   │   ├── package.json
-│   │   ├── src
-│   │   │   ├── types                       typings 指向文件夹下的 index 文件
-│   │   │   └── ...
+│   │   ├── package.json                    main 和 types 指向这里配置
 │   │   └── ...
-│   └── components-vue                      封装了vue组件框，基于antd
-│       ├── .eslintrc.js                    继承父层 .eslintrc.js
-│       ├── tsconfig.json                   继承父层 tsconfig.json
+│   └── components-vue                      封装了vue可复用组件，基于antd (这里添加的组件，注意要补齐 storybook文档以及提供代码片段)
 │       ├── vetur                           组件对应的字段说明(代码提示用)
 │       │   ├── attributes.json
 │       │   ├── README.md
