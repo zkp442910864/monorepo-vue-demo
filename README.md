@@ -22,6 +22,9 @@
     文档命令: yarn storybook
 
     然后到对应的项目执行运行命令
+
+    如果遇到原来可以，迁移进来运行报错的，删掉 lerna.json 字段 npmClient 和 useWorkspaces
+    这样安装的依赖不会做提升处理，直接安装到当前项目下
 ```
 
 ### 包名及引入
