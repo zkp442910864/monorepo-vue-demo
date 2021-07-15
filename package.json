@@ -18,8 +18,13 @@
         "lerna": "^4.0.0",
         "vue-loader": "^15.9.7"
     },
-    "workspaces": [
-        "packages/*",
-        "projects/*"
-    ]
+    "workspaces": {
+        "packages": [
+            "packages/*",
+            "projects/*"
+        ],
+        "nohoist": [
+            "**/common-utils/**"
+        ]
+    }
 }
