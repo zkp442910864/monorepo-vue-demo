@@ -4,28 +4,36 @@
 
 ### 关于monorepo
 >参考资料<br>
->>[monorepo 介绍1](https://www.zhihu.com/question/318476028/answer/1895685159)<br>
->>[monorepo 介绍2](https://blog.csdn.net/qiwoo_weekly/article/details/115713366)<br>
->>[Lerna](https://segmentfault.com/a/1190000019350611)<br>
->>[storybook](https://storybook.js.org/)<br>
+>>[monorepo 资料](https://www.zhihu.com/question/318476028/answer/1895685159)<br>
+>>[monorepo 资料2](https://blog.csdn.net/qiwoo_weekly/article/details/115713366)<br>
+>>[Lerna 资料](https://segmentfault.com/a/1190000019350611)<br>
+>>[Lerna 指令](http://www.febeacon.com/lerna-docs-zh-cn/routes/commands/)<br>
+>>[storybook 官网](https://storybook.js.org/)<br>
+>>[yarn nohoist](https://classic.yarnpkg.com/blog/2018/02/15/nohoist/)<br>
+>>[yarn2 目前没用到，但这个可以使用离线依赖](https://www.yarnpkg.cn/getting-started/install)<br>
 >>使用库的版本最好都一致<br>
 
 
 ### 项目初始化
 ```
-    npm install -g lerna
+    npm install -g lerna yarn
 
-    安装依赖并进行关联: lerna bootstrap || lerna link && yarn install
-
-    清除子项目node_modules: lerna clean
+    安装依赖并进行关联: lerna bootstrap
 
     文档命令: yarn storybook
 
     然后到对应的项目执行运行命令
-
-    如果遇到原来可以，迁移进来运行报错的，删掉 lerna.json 字段 npmClient 和 useWorkspaces
-    这样安装的依赖不会做提升处理，直接安装到当前项目下
 ```
+
+### 报错处理
+```
+    清除子项目node_modules: lerna clean
+
+    如果遇到原来可以，迁移进来运行报错的，两种处理方式(目前知道的)
+        1.删掉 lerna.json 字段 npmClient 和 useWorkspaces,这样安装的依赖不会做提升处理，直接安装到当前项目下
+        2.把这个项目的文件夹名字加到根目录 package.json 里的 nohoist
+```
+
 
 ### 包名及引入
 ```
