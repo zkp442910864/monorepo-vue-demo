@@ -29,7 +29,10 @@
 ```
     清除子项目node_modules: lerna clean
 
-    如果遇到原来可以，迁移进来运行报错的，两种处理方式(目前知道的)
+    1.项目依赖都独立的时候，可能会出现本地运行node_modules，引用的本地包运行另一个node_modules。
+        没找到解决方法
+
+    2.如果遇到原来可以，迁移进来运行报错的，两种处理方式(目前知道的)
         1.删掉 lerna.json 字段 npmClient 和 useWorkspaces,这样安装的依赖不会做提升处理，直接安装到当前项目下
         2.把这个项目的文件夹名字加到根目录 package.json 里的 nohoist
 
